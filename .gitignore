@@ -5,3 +5,4 @@ localhost/
 test.db/
 node_modules/
 .idea
+venv
