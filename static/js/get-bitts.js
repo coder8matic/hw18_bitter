@@ -10,8 +10,13 @@
 
             for (let bitt of bitts) {
                 let bittElement = document.createElement("p");
-                bittElement.innerHTML = bitt.text + "<br> <small>" + bitt.username + "</small>";
-
+                bittElement.innerHTML = 
+                `<div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h6 class="card-title">${bitt.text}</h6>
+                    <p class="card-text text-muted"> ${bitt.username}</p>
+                    </div>
+                </div>`;
                 container.appendChild(bittElement);
             }
         })
@@ -19,4 +24,4 @@
             console.log('Request failed', error);
         });
 
-}())
+}());
